@@ -1,0 +1,65 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer'
+    ;
+    grid-row-gap: 15px;
+}
+
+.header-container {
+    grid-area: header;
+
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-container {
+    grid-area: img;
+    background-image: url("assets/tech-moms-working.jpg");
+    background-size: cover;
+    height: 500px;
+}
+
+.footer-container {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+
+.copyright-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.main-container {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 67% 3% 27% 3%;
+    grid-template-areas: 
+    "img . sidebar ."
+    ;
+    /* grid-gap: 10px; */
+}
+
+.sidebar-container {
+    grid-area: sidebar;
+    background-color: #08e0e9;
+}
